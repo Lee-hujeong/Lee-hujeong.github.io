@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<% request.setCharacterEncoding("utf-8"); %>
 <!doctype html> <!-- formRadio1.jsp -->
 <html>
 <head>
@@ -9,7 +11,7 @@
 <section>
   <h2>JSP form</h2>
   <section>
-    <h2>선택 성별: male<br/></h2>
+    <h2>선택 성별: <%=request.getParameter("gender")%><br/></h2>
   </section>
 </section>
 </body>
